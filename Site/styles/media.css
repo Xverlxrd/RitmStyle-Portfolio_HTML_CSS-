@@ -1,0 +1,281 @@
+@media screen and (max-width: 1100px) {
+    .header__list{
+        font-size: 12px;
+    }
+    .header__item{
+        margin-right: 40px;
+    }
+
+    .footer__date, .footer__info{
+        font-size: 18px;
+    }
+
+    .banner{
+        width: 80%;
+    }
+    .banner__title{
+        font-size: 50px;
+    }
+    .banner__text{
+        font-size: 20px;
+    }
+    
+    .price__content{
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        height: 100%;
+        
+    }
+    .price__content_fhoto{
+        width: 50%;
+        height: 396px;
+        margin: 0;
+    }
+    .price__content_list{
+        width: 50%;
+        height: 400px;
+    }
+    .price__content_list{
+        font-size: 16px;
+    }
+    .price__text{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header__list{
+        font-size: 8px;
+    }
+    .header__item{
+        margin-right: 35px;
+    }
+    
+    .footer__date, .footer__info{
+        font-size: 14px;
+    }
+
+    .banner{
+        width: 70%;
+    }
+    .banner__title{
+        font-size: 45px;
+    }
+    .banner__text{
+        font-size: 16px;
+    }
+
+    .contacts__container{
+        flex-direction: column;
+        max-height: 100%;
+        
+    }
+    .contacts__map{
+        width: 70%;
+        margin-right: 0;
+    }
+    .contacts__content{
+        flex-direction: row;
+        width: 70%;
+        justify-content: space-between;
+    }
+    .contacts__content_item{
+        margin-top: 10px;
+    }
+    .contacts__content_container{
+        justify-content: space-between;
+    }
+    .contacts__title{
+        font-size: 20px;
+    }
+    .contacts_address_title{
+        font-size: 12px;
+    }
+    .contacts__btn{
+        font-size: 10px;
+    }
+
+    .price__content_fhoto{
+        display: none;
+    }
+    .price__content_list{
+        font-size: 14px;
+        width: 100%;
+    }
+    .price__text{
+        font-size: 20px;
+    }
+    .price__content_item{
+        margin-bottom: 20px;
+
+    }
+
+    .about__gidro_img{
+        display: none;
+    }
+    .about__gidro{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .about__massege_img{
+        display: none;
+    }
+    .about__content{
+        justify-content: center;
+    }
+    .about__gidro{
+        justify-content: center;
+        width: 100%;
+    }
+    .about__massage{
+        width: 100%;
+        justify-content: center;
+    }
+    .gidro__info_title{
+        font-size: 20px;
+    }
+    .massage__info_title{
+        font-size: 20px;
+    }
+    .gidro__info_text{
+        font-size: 14px;
+    }
+    .massage__info_text{
+        font-size: 14px;
+    }
+    .about__massage_info{
+        align-items: center;
+    }
+    .about__gidro_info{
+        align-items: center;
+    }
+
+    .servis__text{
+        font-size: 30px;
+    }
+    .servis__current_text{
+        font-size: 20px;
+    }
+    .servis__item_text{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .header__list{
+        display: none;
+    }
+    .header__bnt{
+        display: none;
+    }
+    .wrapper{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .burger__menu{
+        display: block;
+    }
+
+    .banner{
+        width: 60%;
+    }
+    .banner__title{
+        font-size: 35px;
+    }
+    .banner__text{
+        font-size: 10px;
+    }
+
+    .contacts__map{
+        width: 60%;
+        height: 200px;
+    }
+    .contacts__content{
+        width: 60%;
+    }
+    .contacts__title{
+        font-size: 15px;
+    }
+    .contacts_address_title{
+        font-size: 10px;
+    }
+    .contacts__btn{
+        font-size: 8px;
+    }
+    .contacts__content_item{
+        height: 200px;
+    }
+    .contacts__address{
+        margin-bottom: 10px;
+    }
+    .contacts__content_container{
+        margin: 10px 20px;
+    }
+
+    .gidro__info_title{
+        font-size: 16px;
+    }
+    .massage__info_title{
+        font-size: 16px;
+    }
+    .gidro__info_text{
+        font-size: 10px;
+    }
+    .massage__info_text{
+        font-size: 10px;
+    }
+
+    .servis__text{
+        font-size: 26px;
+    }
+    .servis__current_text{
+        font-size: 16px;
+    }
+    .servis__item_text{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .contacts__content{
+        display: none;
+    }
+
+    .servis__text{
+        font-size: 20px;
+    }
+    .servis__current_text{
+        font-size: 10px;
+        left: 20px;
+    }
+    .servis__item_text{
+        font-size: 10px;
+        left: 10px
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .banner{
+        width: 60%;
+    }
+    .banner__title{
+        font-size: 22px;
+    }
+    .banner__text{
+        font-size: 10px;
+    }
+
+    .servis__text{
+        font-size: 14px;
+    }
+    .servis__current_text{
+        font-size: 8px;
+        left: 10px;
+    }
+    .servis__item_text{
+        font-size: 8px;
+        left: 5px
+    }
+}

@@ -1,0 +1,493 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Raleway', sans-serif;
+  background-color: #162831;
+}
+
+body >{
+  text-decoration: none;
+}
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+a, li{
+  text-decoration: none;
+}
+
+
+/* Styles for burger menu */
+.burger__menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+.menu__line{
+  height: 5px;
+  min-width: 50px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+/* Styles for header */
+header{
+  min-height: 140px;
+}
+.header__container{
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 140px;
+}
+.header__list{
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+}
+.header__item{
+  margin-right: 50px;
+  opacity: 40%;
+}
+.header__item:hover{
+  opacity: 100%;
+}
+.header__link{
+  color: white;
+}
+.header__bnt{
+  background-color: #018ABE;
+  border-radius: 3px;
+  width: 155px;
+  height: 36px;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+}
+/* Styles for banner */
+.banner__container{
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.banner{
+  background-image: url(/img/banner__bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.banner__text_container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.banner__text{
+  display: flex;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.banner__title{
+  font-size: 64px;
+}
+
+/* Styles for sessions */
+.servis__container{
+  max-width: 1296px;
+  margin: 0 auto;
+  margin-top: 150px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.servis__title{
+  margin-bottom: 100px;
+}
+.servis__text{
+  font-size: 42px;
+  font-weight: 700;
+}
+.servis__content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.servis__items_container{
+  display: flex;
+  flex-direction: column;
+  width: 68%;
+}
+.servis__items{
+  display: flex;
+  margin-bottom: 24px;
+}
+.servis__item{
+  margin-left: 24px;
+}
+.servis__item_current{
+  background-image: url(/img/catalog__bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+  width: 32%;
+  border-bottom: 7px #018ABE solid;
+  border-radius: 10px;
+  position: relative;
+}
+.servis__current_text{
+  position: absolute;
+  bottom: 43px;
+  left: 50px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.servis__item{
+  height: 258px;
+  width: 48%;
+  background-image: url(/img/catalog__bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+}
+.servis__item_text{
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+/* Styles for about */
+.about__container{
+  max-width: 1076px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  color: white;
+  align-items: center;
+}
+.about__title{
+  margin-bottom: 100px;
+}
+.about__text{
+  font-weight: 700;
+  font-size: 42px;
+}
+.about__content{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+.about__massage{
+  display: flex;
+  margin-bottom: 100px;
+}
+.about__massage_info{
+  display: flex;
+  flex-direction: column;
+  width: 43%;
+  justify-content: center;
+}
+.massage__info_title{
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.massage__info_text{
+  font-weight: 300;
+  font-size: 16px;
+}
+.about__massege_img{
+  border-radius: 10px;
+  background-image: url(/img/about__img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 356px;
+  width: 49%;
+  margin-left: 84px;
+}
+
+.about__gidro{
+  display: flex;
+}
+.about__gidro_img{
+  border-radius: 10px;
+  background-image: url(/img/about__img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 49%;
+  margin-right: 84px;
+}
+.about__gidro_info{
+  display: flex;
+  flex-direction: column;
+  width: 43%;
+  justify-content: center;
+}
+.gidro__info_title{
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.gidro__info_text{
+  font-weight: 300;
+  font-size: 16px;
+}
+/* Styles for price */
+.price__container{
+  max-width: 1076px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  color: white;
+  align-items: center;
+}
+.price__title{
+  margin-bottom: 100px;
+}
+.price__text{
+  font-size: 42px;
+  font-weight: 700;
+}
+.price__content{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  height: 455px;
+}
+.price__content_list{
+  width: 39%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+}
+.price__content_item{
+  display: flex;
+  margin-bottom: 31px;
+}
+.price__content_name{
+  width: 64%;
+}
+.price__content_text{
+  margin-left: 120px;
+}
+.price__content_fhoto{
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  align-items: center;
+  margin-left: 134px;
+  font-size: 21px;
+}
+.price__content_img{
+  width: 100%;
+  height: 87%;
+  background-image: url(/img/price__bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+/* Styles for contacts */
+.contacts__container{
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  max-height: 604px;
+}
+.contacts__map{
+  width: 66%;
+  height: 604px;
+  background-image: url(/img/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 48px;
+  border-radius: 10px;
+}
+.contacts__content{
+  width: 34%;
+  height: 604px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts__content_item{
+  width: 100%;
+  height: 290px;
+  display: flex;
+  background-color: #018ABE;
+  border-radius: 10px;
+  color: white;
+}
+.contacts__content_container{
+  margin: 25px 45px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts__title{
+  font-size: 24px;
+  font-weight: 700;
+}
+.contats__info_container{
+  display: flex;
+  flex-direction: column;
+}
+.contacts__address{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 21px;
+}
+.contacts_address_title{
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.contacts__btn{
+  display: flex;
+  width: 47%;
+  height: 36px;
+  border-radius: 3px;
+  align-items: center;
+  border: none;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 13px;
+  color: #018ABE;
+}
+
+/* Styles for footer */
+.footer__container{
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  color: white;
+  margin-bottom: 10px;
+}
+.footer__date{
+  font-weight: 400;
+  font-size: 20px;
+}
+.footer__info{
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Animation */
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+.header__bnt:hover{
+  animation: bounce 1s;
+}
+.contacts__btn:hover{
+  background-color: greenyellow;
+}
